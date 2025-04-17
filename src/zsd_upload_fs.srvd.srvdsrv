@@ -1,0 +1,4 @@
+@EndUserText.label: 'freestyle upload'
+define service ZSD_UPLOAD_FS {
+  expose ZCE_UPLOAD;
+}

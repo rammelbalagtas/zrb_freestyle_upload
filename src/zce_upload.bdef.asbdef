@@ -1,0 +1,11 @@
+unmanaged implementation in class zbp_ce_upload unique;
+strict ( 2 );
+
+define behavior for ZCE_UPLOAD alias Upload
+lock master
+authorization master ( instance )
+{
+  field ( readonly ) DummyKey;
+  //static function UploadFile parameter zupload_file_abstract result [0..*] zupload_result_abstract;
+  static action UploadFile parameter zupload_file_abstract result [0..*] zupload_result_abstract;
+}
