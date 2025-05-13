@@ -36,8 +36,8 @@ CLASS lhc_ZCE_UPLOAD IMPLEMENTATION.
            tt_row TYPE STANDARD TABLE OF ty_excel.
 
     DATA lt_rows TYPE tt_row.
-    DATA lt_content TYPE STANDARD TABLE OF zfilecontent.
-    DATA ls_content LIKE LINE OF lt_content.
+*    DATA lt_content TYPE STANDARD TABLE OF zfilecontent.
+*    DATA ls_content LIKE LINE OF lt_content.
 
     DATA: lv_attachment TYPE /dmo/attachment.
     DATA(lv_content) = keys[ 1 ]-%param-fileContentString.
